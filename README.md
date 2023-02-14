@@ -50,7 +50,7 @@ The results of this project demonstrate promising outcomes, as both the stochast
 
 ## Limitations and Future Work
 
-As an early prototyping the trading idea, the work was treated as a data analysis project, the code in this project needs to be cleaned up and reorganized to ensure modularity.
+As an early prototyping the trading idea, the work was treated as a data analysis project mainly worked in jupyter notebooks. the code in this project needs to be cleaned up and reorganized to ensure modularity.
 
 It's important to note that this project does not yet incorporate alpha signals, financial risk management, or portfolio optimization. As such, my future work will focus on developing a comprehensive and wholistic multi-strategy trading system that includes the following design elements:
 1. Robust data acquisition and vetting, with supplementary statistics to fill any missing data.
