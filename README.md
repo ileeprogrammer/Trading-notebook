@@ -4,8 +4,8 @@ Welcome to my early algorithmic trading demonstration, which highlights my abili
 
 ## The project was executed using Jupyter Notebooks, and is comprised of the following steps:
 
-Data Acquisition - I scraped OHLC data of cryptocurrencies from the Coinbase Pro API to ensure that I had the necessary data for analysis and strategy development.
-Trading Ideas - My work focused on simulating trading ideas from scratch. Specifically, I performed data analysis and employed technical indicators, including the tuning of the window sizes of technical indicators. I also created a simple order book to execute buy and sell orders using FIFO serving.
+1. Data Acquisition - I scraped OHLC data of cryptocurrencies from the Coinbase Pro API to ensure that I had the necessary data for analysis and strategy development.
+2. Trading Ideas - My work focused on simulating trading ideas from scratch. Specifically, I performed data analysis and employed technical indicators, including the tuning of the window sizes of technical indicators. I also created a simple order book to execute buy and sell orders using FIFO serving.
 I have included the virtualenv requirements for the Python environment to make it easier to replicate my work.
 
 ## Parameters in this Notebook
@@ -14,7 +14,7 @@ I have included the virtualenv requirements for the Python environment to make i
 2. Bollinger Band window size - I set it to 18, with the upper and lower bands both set at 2 standard deviations from the moving average.
 3. Stochastic Oscillator - I set the K period to 14 * 30 and the D period to 3 * 30 to optimize trading signals.
 4. "My Signal" - I created a signal where the sell condition is when the price drops below the Bollinger lower band and %D (the slower simple moving average of the %K) is less than 20. The buy condition is when the price exceeds the Bollinger upper band and %K is greater than 80.
-5. I used "1" as a buy signal and "-1" as a sell signal. The order book executed a market order using the closing price to ensure that it remained simple.
+5. I used "1" as a sell signal and "-1" as a buy signal. The order book executed a market order using the closing price to ensure that it remained simple.
 The order book in the simulation followed a FIFO system to ensure that the orders were executed efficiently.
 
 ## Results
@@ -59,4 +59,4 @@ It's important to note that this project does not yet incorporate alpha signals,
 4. Integration with brokerages and order submission capabilities.
 5. Portfolio allocation and analysis to better understand performance.
 
-By implementing these strategies, I will build a sophisticated trading system that can generate higher returns while managing risk effectively.
+By implementing these steps, I will build a sophisticated trading system that can generate higher returns while managing risk effectively.
